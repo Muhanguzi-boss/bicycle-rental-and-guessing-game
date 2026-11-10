@@ -1,0 +1,42 @@
+PROJECT GUIDE
+=============
+
+This project is a Windows Forms application with a login screen, a main menu, and two systems.
+
+Program.cs
+Starts the application and opens the LoginForm first.
+
+LoginForm.cs
+Checks the demo username and password. If they are correct, it opens the main menu.
+Demo username: student
+Demo password: 1234
+
+LoginForm.Designer.cs
+Contains the visual layout of the login form, including its labels, text boxes, and button.
+
+MainMenuForm.cs
+Opens the bicycle rental form or mushroom identification form when the user selects a button.
+
+MainMenuForm.Designer.cs
+Contains the visual layout of the main menu and its two system buttons.
+
+BicycleRentalForm.cs
+Checks the entered start and end hours, calculates the rental price using the hourly rates, and displays the total.
+
+BicycleRentalForm.Designer.cs
+Contains the visual layout of the bicycle rental form, including the time inputs, rate information, and total box.
+
+MushroomIdentificationForm.cs
+Asks Yes/No questions and identifies one of the six mushroom types. It uses no more than three questions.
+
+MushroomIdentificationForm.Designer.cs
+Contains the visual layout of the mushroom form, including the question, progress indicator, and Yes/No buttons.
+
+The .resx files
+These are Windows Forms resource files associated with each form. They are currently empty and are included for Visual Studio's form designer.
+
+guessing game.csproj
+Project settings. It enables Windows Forms and groups each form with its designer and resource files.
+
+guessing game.slnx
+The solution file used to open the project in Visual Studio.

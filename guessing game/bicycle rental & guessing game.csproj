@@ -1,0 +1,51 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <RootNamespace>GuessingGame</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Update="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Update="MainMenuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="MainMenuForm.Designer.cs">
+      <DependentUpon>MainMenuForm.cs</DependentUpon>
+    </Compile>
+    <Compile Update="BicycleRentalForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="BicycleRentalForm.Designer.cs">
+      <DependentUpon>BicycleRentalForm.cs</DependentUpon>
+    </Compile>
+    <Compile Update="MushroomIdentificationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="MushroomIdentificationForm.Designer.cs">
+      <DependentUpon>MushroomIdentificationForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Update="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="MainMenuForm.resx">
+      <DependentUpon>MainMenuForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="BicycleRentalForm.resx">
+      <DependentUpon>BicycleRentalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="MushroomIdentificationForm.resx">
+      <DependentUpon>MushroomIdentificationForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
